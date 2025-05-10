@@ -1,5 +1,0 @@
-"use strict";var o=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var i=o(function(d,s){
-var n=require('@stdlib/ndarray-base-unary-output-dtype/dist'),l=require('@stdlib/ndarray-base-assert-is-data-type/dist'),p=require('@stdlib/ndarray-promotion-rules/dist'),u=require('@stdlib/error-tools-fmtprodmsg/dist');function v(e,r,t){var a;if(l(t))return t;if(t==="same"){if(e!==r)throw new Error(u('invalid arguments. Unable to resolve an output data type. The output data type policy is "same" and yet the input data types are not equal. Data types: [%s, %s].',e,r));return e}if(t==="default"||t==="default_index")return n(e,t);if(a=p(e,r),a===null||a===-1)throw new Error(u("invalid arguments. Unable to apply type promotion rules when resolving a data type to which the input data types can be safely cast. Data types: [%s, %s].",e,r));try{a=n(a,t)}catch(m){throw new TypeError(u("invalid argument. Third argument must be a supported data type policy. Value: `%s`.",t))}return a}s.exports=v
-});var h=i();module.exports=h;
-/** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map

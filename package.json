@@ -37,16 +37,13 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/ndarray-base-assert-is-data-type": "^0.2.2",
-    "@stdlib/ndarray-base-unary-output-dtype": "^0.2.2",
-    "@stdlib/ndarray-promotion-rules": "^0.3.0",
-    "@stdlib/string-format": "^0.2.2",
-    "@stdlib/types": "^0.4.3",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
+    "@stdlib/ndarray-base-output-dtype": "github:stdlib-js/ndarray-base-output-dtype#main",
+    "@stdlib/types": "^0.4.3"
   },
   "devDependencies": {
     "@stdlib/array-base-n-cartesian-product": "^0.2.2",
     "@stdlib/console-log-each-map": "github:stdlib-js/console-log-each-map#main",
+    "@stdlib/ndarray-base-assert-is-data-type": "^0.2.2",
     "@stdlib/ndarray-defaults": "^0.3.0",
     "@stdlib/ndarray-dtypes": "^0.3.0",
     "@stdlib/utils-nary-function": "^0.2.2",

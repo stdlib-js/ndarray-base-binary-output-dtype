@@ -79,6 +79,8 @@ Resolves the output ndarray [data type][@stdlib/ndarray/dtypes] for a binary fun
 
 ```javascript
 var dt = binaryOutputDataType( 'int32', 'float32', 'floating_point' );
+
+var s = String( dt );
 // returns 'float64'
 ```
 
@@ -92,9 +94,13 @@ If `policy` is a [data type][@stdlib/ndarray/dtypes], the function always return
 
 ```javascript
 var dt = binaryOutputDataType( 'float32', 'float32', 'float64' );
+
+var s = String( dt );
 // returns 'float64'
 
 dt = binaryOutputDataType( 'int32', 'int8', 'float64' );
+
+s = String( dt );
 // returns 'float64'
 
 // ...
@@ -204,7 +210,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -230,8 +236,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 

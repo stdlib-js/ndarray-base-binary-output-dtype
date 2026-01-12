@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-13)
+## Unreleased (2026-01-12)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`4f2cdaa`](https://github.com/stdlib-js/stdlib/commit/4f2cdaafcee4670fb5b1b5f562d445d7367c8404) - **docs:** update to support data type objects and be opaque regarding return value _(by Athan Reines)_
 -   [`dcfeda4`](https://github.com/stdlib-js/stdlib/commit/dcfeda41070dee08be0ddd2be3d23d82b1658f4b) - **test:** fix broken tests due to upstream changes _(by Athan Reines)_
 -   [`b51882d`](https://github.com/stdlib-js/stdlib/commit/b51882d4f8acb7af8e93109c3b76ab36fcbb3b76) - **refactor:** use generalized utility _(by Athan Reines)_
 -   [`ad9966a`](https://github.com/stdlib-js/stdlib/commit/ad9966a5d6c560c6a4b2c785f2caafdd472b8399) - **refactor:** reuse existing logic by building on `ndarray/base/unary-output-dtype` _(by Athan Reines)_

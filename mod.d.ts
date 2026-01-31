@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,34 +16,27 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var outputDataType = require( '@stdlib/ndarray-base-output-dtype' );
-
-
-// MAIN //
+import { DataType, OutputPolicy } from '@stdlib/types/ndarray';
 
 /**
 * Resolves the output ndarray data type for a binary function.
 *
-* @param {*} xdtype - first input ndarray data type
-* @param {*} ydtype - second input ndarray data type
-* @param {(string|*)} policy - output ndarray data type policy
-* @throws {TypeError} third argument must be a recognized data type policy
-* @throws {Error} must provide data types amenable to type promotion
-* @returns {DataType} output ndarray data type
+* @param xdtype - first input ndarray data type
+* @param ydtype - second input ndarray data type
+* @param policy - output ndarray data type policy
+* @returns output ndarray data type
 *
 * @example
-* var dt = resolve( 'float64', 'float32', 'complex_floating_point' );
+* var dt = outputDataType( 'float64', 'float32', 'complex_floating_point' );
 * // returns <DataType>
 */
-function resolve( xdtype, ydtype, policy ) {
-	return outputDataType( [ xdtype, ydtype ], policy );
-}
+declare function outputDataType( xdtype: DataType, ydtype: DataType, policy: OutputPolicy | DataType ): DataType;
 
 
 // EXPORTS //
 
-module.exports = resolve;
+export = outputDataType;
